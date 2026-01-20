@@ -12,7 +12,7 @@ static const tflite::Model* model = nullptr;
 static tflite::MicroInterpreter* interpreter = nullptr;
 static tflite::MicroMutableOpResolver<10>* resolver = nullptr; // Ajuste o número se precisar
 static uint8_t* tensor_arena = nullptr;
-static const int kTensorArenaSize = 60 * 1024; // 60KB
+static const int kTensorArenaSize = 130 * 1024; // 130KB
 
 // Função de Inicialização (C++)
 int tflm_init(void) {
